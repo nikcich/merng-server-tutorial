@@ -7,7 +7,7 @@ const { MONGODB } = require('./config.js');
 
 const pubsub = new PubSub();
 
-const PORT = process.env.port || 5000; // for real things
+const PORT = process.env.PORT || 5000; // for real things
 
 
 const server = new ApolloServer({
@@ -27,5 +27,3 @@ mongoose
     .catch(err => {
         console.error(err);
     });
-
-
